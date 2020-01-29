@@ -8,6 +8,13 @@ const functions = {
       lastName: lastName
     };
     return user;
+  },
+  sumDigits: num => {
+    return num
+      .toString()
+      .split("")
+      .map(num => Number(num))
+      .reduce((a, b) => a + b);
   }
 };
 
